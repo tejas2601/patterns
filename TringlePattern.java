@@ -1,4 +1,4 @@
-public class Main12 {
+public class TringlePattern {
     public static void main(String[] args) {
         int n = 4;
         char ch = 'a';
@@ -9,5 +9,6 @@ public class Main12 {
             System.out.println();
             
         }
+    
     }
 }
