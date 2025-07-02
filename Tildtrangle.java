@@ -1,16 +1,23 @@
 public class Tildtrangle {
     public static void main(String[] args) {
         int n = 9;
-        int j=0;
-        for (int i = n-1; i >=0; i--) {
-            for(int space=0;space<=j;space++){
-                System.out.print(" ");
+        int star=1;
+        int space=n/2;;
+        for (int i = 0; i <n; i++) {
+            for(int j=0;j<space;j++){
+                System.out.print("  ");
             }
-            for(int star=i;star>=0;star--){
-                System.out.print("*"+"  ");
+            for(int j=0;j<star;j++){
+                System.out.print("*");
             }
             System.out.println();
-            j++;
+            if(i<n/2){
+                star+=2;
+                space--;
+        }else{
+                star-=2;
+                space++;
+            }
         }
     }
     
